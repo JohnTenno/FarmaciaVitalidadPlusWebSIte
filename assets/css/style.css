@@ -2143,3 +2143,118 @@ p {
   font-size: 20px; 
 }
 
+/* Sección de Capacitación */
+#capacitacion {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.capacitacion-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.capacitacion-list li {
+  font-size: 1.1rem;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.capacitacion-list li:hover {
+  transform: translateX(5px);
+}
+
+/* Animación al cargar */
+.about-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.catalog-section {
+  padding: 80px 0;
+}
+.category-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.category-title {
+  color: #2b3e51;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #4e7bff;
+  padding-bottom: 10px;
+}
+.product-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.product-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+  position: relative;
+  padding-left: 20px;
+}
+.product-list li:before {
+  content: "•";
+  color: #4e7bff;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+.catalog-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.catalog-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2b3e51;
+}
+.catalog-header p {
+  color: #6c757d;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.category-icon {
+  font-size: 40px;
+  color: #4e7bff;
+  margin-bottom: 15px;
+}
